@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TradeVolt - Binance Auto Trading Bot</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#0a0e1a;color:#fff;text-align:center}
+.container{max-width:480px;margin:0 auto;padding:20px}
+.card{background:#151a2d;border-radius:16px;padding:25px;margin-top:20px}
+h1{color:#f3ba2f;font-size:28px}
+.price{font-size:42px;color:#00ff88;font-weight:bold;margin:15px 0}
+.wallet{background:#0a0e1a;border:1px dashed #f3ba2f;padding:12px;border-radius:8px;word-break:break-all;font-family:monospace;margin:15px 0}
+.btn{display:block;background:#f3ba2f;color:#000;padding:16px;border-radius:10px;text-decoration:none;font-weight:bold;font-size:18px;margin:10px 0}
+.btn2{background:#00ff88}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <h1>⚡ TradeVolt ⚡</h1>
+    <p>Rent Binance Auto-Trading Bot</p>
+    <div class="price">5 USDT<br><small style="font-size:16px;color:#fff"> = 14 Days</small></div>
+    <p>Send exactly <b>5 USDT</b> to:</p>
+    <div class="wallet" id="wallet">0xc19Bc37eb1e3757F99ac3b70f30e7A10a74e122b</div>
+    <button onclick="copyAddr()" style="background:#222;color:#fff;border:none;padding:8px 16px;border-radius:6px;cursor:pointer">Copy Address</button>
+    <p>Network: <b>BEP20 (BSC)</b> - USDT</p>
+    <a class="btn" href="https://t.me/TradeVoltBot">✅ I Have Paid - Activate Bot</a>
+    <a class="btn btn2" href="https://t.me/TradeVoltBot">💬 Contact on Telegram</a>
+  </div>
+</div>
+<script>
+function copyAddr(){
+  navigator.clipboard.writeText("0xc19Bc37eb1e3757F99ac3b70f30e7A10a74e122b");
+  alert("Address Copied!");
+}
+</script>
+</body>
+</html>
